@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import requests
 import os
 import pandas as pd
+import koreanize_matplotlib
 
 def download_weather(weather_filename,stid, sy, ey):
     url = f"https://api.taegon.kr/stations/{stid}/?sy={sy}&ey={ey}&format=csv"
